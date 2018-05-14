@@ -1,8 +1,14 @@
 public class NomeInvalidoException extends Exception {
+
+    private String nome;
     
-    @Override
-    public String getMessage(){
-    
-    return "O nome digitado não é Ronei";
+    public NomeInvalidoException(String message, String nome){
+        super(message);
+        this.nome = nome;
     }
+    public String getNome(){
+        
+        return nome;
+    }
+    
 }
