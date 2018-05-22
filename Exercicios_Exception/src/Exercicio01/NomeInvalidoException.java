@@ -1,3 +1,4 @@
+package exercicio01;
 public class NomeInvalidoException extends Exception {
 
     private String nome;
